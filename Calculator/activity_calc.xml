@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="320dp"
+        android:gravity="bottom"
+        android:text="@string/_defAns"
+        android:textAlignment="textEnd"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/AC"
+            android:layout_columnWeight="1"
+            android:onClick="allClear"
+            android:text="@string/ac"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/modulo"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="operation"
+            android:text="@string/modulo"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="operation"
+            android:text="@string/divide"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/backSpace"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="backSpace"
+            android:text="@string/backSpace"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/_7"
+            android:layout_columnWeight="1"
+            android:onClick="updateValue"
+            android:text="@string/_7"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/_8"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="updateValue"
+            android:text="@string/_8"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/_9"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="updateValue"
+            android:text="@string/_9"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="operation"
+            android:text="@string/multiply"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/_4"
+            android:layout_columnWeight="1"
+            android:onClick="updateValue"
+            android:text="@string/_4"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/_5"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="updateValue"
+            android:text="@string/_5"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/_6"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="updateValue"
+            android:text="@string/_6"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="operation"
+            android:text="@string/plus"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/_1"
+            android:layout_columnWeight="1"
+            android:onClick="updateValue"
+            android:text="@string/_1"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/_2"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="updateValue"
+            android:text="@string/_2"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/_3"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="updateValue"
+            android:text="@string/_3"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="operation"
+            android:text="@string/minus"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+    </GridLayout>
+
+    <GridLayout
+
+        android:id="@+id/gridLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="3"
+        android:rowCount="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/_0"
+            android:layout_columnWeight="2"
+            android:onClick="updateValue"
+            android:text="@string/_0"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/exponential"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="operation"
+            android:text="@string/exponential"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+
+        <Button
+            android:id="@+id/result"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:onClick="operation"
+            android:text="@string/result"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic"></Button>
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
